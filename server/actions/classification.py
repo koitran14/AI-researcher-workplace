@@ -4,6 +4,8 @@ from transformers import pipeline
 model = "facebook/bart-large-mnli"
 method = "zero-shot-classification"
 
+# idea: will detect the %correlation between experts with current project to have the best recommendation.
+
 def sort_people_by_correlation(people_candidates, text_detection):
     classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli", multi_label=True)
 
