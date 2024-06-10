@@ -131,10 +131,6 @@ To run the server-side API locally:
 
 For more detailed instructions and documentation, refer to the [server-side repository](https://github.com/koitran14/AI-researcher-workplace/tree/main/server).
 
-## Contributing
-
-Contributions to the AI Researcher Workplace project are welcome! Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
