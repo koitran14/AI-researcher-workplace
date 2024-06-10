@@ -22,31 +22,39 @@ The client-side application is built using modern web technologies and framework
 
 To run the client-side application locally:
 
-1. Clone the repository:
+1. 🌀 Clone the repository:
 
    ```bash
    git clone https://github.com/koitran14/AI-researcher-workplace.git
    ```
 
-2. Navigate to the client directory:
+2. 📂 Navigate to the client directory:
 
    ```bash
    cd AI-researcher-workplace/client
    ```
 
-3. Install dependencies:
+3. ⚙️ Install dependencies:
 
    ```bash
    npm install
    ```
 
-4. Start the development server:
+4. 🔑 Set up environment variables:
+
+   Create a `.env` file in the root directory and add the required environment variables.
+   
+    ```bash
+   NEXT_PUBLIC_API_URL=http://localhost:8000
+   ```
+    
+5. ▶️ Start the development server:
 
    ```bash
    npm run dev
    ```
 
-5. Access the application:
+6. 🌐 Access the application:
 
    Open your web browser and navigate to `http://localhost:3000` to access the AI Researcher Workplace client-side application.
 
@@ -64,7 +72,7 @@ The server-side API is responsible for managing user authentication, data storag
 
 In addition to standard API functionalities, the server-side implements advanced natural language processing (NLP) capabilities using the BART-Large-MNLI model from Hugging Face. This model is part of the BART (Bidirectional and Auto-Regressive Transformers) family and is fine-tuned on the MultiNLI (Multi-Genre Natural Language Inference) dataset.
 
-#### Model Used: Facebook/BART-Large-MNLI by Hugging Face
+#### 🤖 Model Used: Facebook/BART-Large-MNLI by Hugging Face
 
 - **Model Description**: BART-Large-MNLI is a variant of the BART model, which is pre-trained on large-scale text data using a denoising autoencoder objective. It has been fine-tuned on the MNLI dataset, which consists of natural language inference (NLI) tasks, including textual entailment and contradiction recognition.
 
@@ -86,29 +94,36 @@ In addition to standard API functionalities, the server-side implements advanced
 
 To run the server-side API locally:
 
-1. Clone the repository:
+1. 🌀 Clone the repository:
 
    ```bash
    git clone https://github.com/koitran14/AI-researcher-workplace.git
    ```
 
-2. Navigate to the server directory:
+2. 📂 Navigate to the server directory:
 
    ```bash
    cd AI-researcher-workplace/server
    ```
 
-3. Install dependencies:
+3. ⚙️ Install dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Set up environment variables:
+4. 🔑 Set up environment variables:
 
    Create a `.env` file in the root directory and add the required environment variables.
+   
+    ```bash
+   SECRET_KEY=  'YOUR_SECRET_KEY_FOR_TOKEN'
+   ALGORITHM= 'HS256'
+   HUGGINGFACEHUB_API_TOKEN='YOUR_HUGGINFACE_SECRET_KEY'
+   UPLOAD_DIRECTORY = "/uploads"
+   ```
 
-5. Start the server:
+6. ▶️ Start the server:
 
    ```bash
    uvicorn main:app --reload
