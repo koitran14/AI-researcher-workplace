@@ -1,4 +1,4 @@
-from sqlalchemy import LargeBinary,Column, ForeignKey, Integer, String, Table, Date
+from sqlalchemy import LargeBinary,Column, ForeignKey, Integer, String, Table, DateTime
 from db import Base
 
 from sqlalchemy.orm import relationship
@@ -34,7 +34,7 @@ class User(Base):
     
     firstName = Column(String(60))
     lastName = Column(String(60))
-    dob = Column(Date)
+    dob = Column(DateTime)
     avatar = Column(String(100))
     bio = Column(String(350))
     

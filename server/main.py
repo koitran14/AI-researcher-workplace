@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from db import engine
 import models
-from views import user_view, project_view
+from views import user_view, project_view, role_view
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -23,3 +23,4 @@ models.Base.metadata.create_all(bind=engine)
 
 app.include_router(user_view.router)
 app.include_router(project_view.router)
+app.include_router(role_view.router)

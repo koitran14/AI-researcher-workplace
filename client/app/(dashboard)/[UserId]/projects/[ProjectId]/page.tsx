@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ChevronRight, Home } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 interface User {
     id: number;
@@ -82,9 +83,36 @@ export default function ProjectPage() {
         ]
     };
     
+    const recommendation =  [
+        {
+            id: 1,
+            username: "john_doe",
+            firstName: "John",
+            lastName: "Doe",
+            avatar: "/blank-avatar.webp",
+            bio: "Sample bio for John Doe"
+        },
+        {
+            id: 2,
+            username: "jane_smith",
+            firstName: "Jane",
+            lastName: "Smith",
+            avatar: "/blank-avatar.webp",
+            bio: "Sample bio for Jane Smith"
+        },
+        {
+            id: 3,
+            username: "Kana",
+            firstName: "Kana",
+            lastName: "Anamie",
+            avatar: "/blank-avatar.webp",
+            bio: "Sample bio for Jane Smith"
+        },
+    ]
+
     return (
         <div className="container mx-auto p-6 md:px-[300px] md:py-6">
-            <div className="bg-white shadow-lg rounded-lg p-6 md:px-16 py-8 flex flex-col w-full gap-y-4">
+            <div className="bg-white shadow-lg rounded-lg p-6 md:px-16 py-8 flex flex-col w-full gap-y-8">
                 <nav className="text-gray-500 mb-4">
                     <ol className="list-none p-0 inline-flex">
                         <li className="flex items-center">
@@ -125,7 +153,7 @@ export default function ProjectPage() {
                 </div>
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Participants</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {project.participants.map((participant) => (
                             <div key={participant.id} className="bg-gray-100 p-4 rounded-lg shadow">
                                 <div className="relative w-24 h-24 mb-4 mx-auto">
@@ -145,7 +173,7 @@ export default function ProjectPage() {
                 </div>
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Experts</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {project.participants.map((participant) => (
                             <div key={participant.id} className="bg-gray-100 p-4 rounded-lg shadow">
                                 <div className="relative w-24 h-24 mb-4 mx-auto">
@@ -173,6 +201,28 @@ export default function ProjectPage() {
                             </div>
                         ))}
                     </div>
+                </div>
+                <div className='flex flex-col gap-y-6'>
+                    <h2 className="text-2xl font-semibold mb-2">Suggested for you</h2>
+                    <div className='border-t mt-4 mb-5'/>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        {recommendation.map((suggestion) => (
+                            <div key={suggestion.id} className="bg-gray-100 p-4 rounded-lg shadow">
+                                <div className="relative w-24 h-24 mb-4 mx-auto">
+                                    <Image
+                                        src={suggestion.avatar}
+                                        alt={suggestion.username}
+                                        width={96}
+                                        height={96}
+                                        className="rounded-full object-cover"
+                                    />
+                                </div>
+                                <h3 className="text-xl font-semibold text-gray-700 text-center">{suggestion.firstName} {suggestion.lastName}</h3>
+                                <p className="text-gray-500 text-center">{suggestion.bio}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <Button>Find more</Button>
                 </div>
             </div>
         </div>

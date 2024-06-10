@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from datetime import date
+from datetime import datetime
 from typing import List, Optional
 from .role_schema import Role
 from .field_schema import Field
@@ -12,7 +12,7 @@ class User(BaseModel):
     
     firstName: str
     lastName: str
-    dob: date
+    dob: datetime
     bio: str
     ava: Optional[str] = None
     roleName: Optional[Role] = None
@@ -30,7 +30,7 @@ class CreateUserRequest(BaseModel):
     password: str
     firstName: str
     lastName: str
-    dob: date
+    dob: datetime
     bio: str
     roleName: str
 
@@ -39,7 +39,7 @@ class register(BaseModel):
     hashed_password: str
     firstName: str
     lastName: str
-    dob: date
+    dob: datetime
     bio: str
     roleName: str
         

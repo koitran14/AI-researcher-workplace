@@ -90,7 +90,7 @@ const SignInPage = () => {
                     onClick={() => router.push('/sign-up')}
                     className="w-full border text-black py-2 rounded-md hover:bg-rose-600 hover:text-white transition duration-200"
                 >
-                    Sign Up
+                    Sign Up 
                 </button>
             </form>
             </div>

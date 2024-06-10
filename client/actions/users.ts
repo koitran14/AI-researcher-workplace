@@ -1,17 +1,28 @@
 import axios from "axios"
-import { access } from "fs";
 
 export interface User{
     id: Number,
     username: String,
     password: String,
+    dob: Date,
+    bio: String,
     roleName: String,
     firstName: String,
     lastName: String,
     avatar: string | null,
     fields: []
     projects: []
+}
 
+
+export interface UserRegistration{
+    username: String,
+    password: String,
+    roleName: String,
+    firstName: String,
+    lastName: String,
+    dob: Date,
+    bio: String,
 }
 
 interface SignInUser {
@@ -29,6 +40,16 @@ export async function signIn(user: SignInUser){
     },{
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
+        }
+    })
+    console.log(user)
+    return response;
+}
+
+export async function register(user: UserRegistration){
+    const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/users`, user ,{
+        headers: {
+            'Content-Type': 'application/json'
         }
     })
     console.log(user)
@@ -55,7 +76,7 @@ export async function getCurrentUser(token: string) {
             token_type: "bearer"
         }, {
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
+                'Content-Type': 'application/json'
             }
         })
         return response.data;
