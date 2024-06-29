@@ -95,7 +95,7 @@ The server-side API manages user authentication, data storage, business logic, a
 
 ### 🤖✨ Advanced AI Capabilities ✨🤖
 
-In addition to standard API functionalities, the server-side implements advanced natural language processing (NLP) capabilities using the BART-Large-MNLI model from Hugging Face. This model is part of the BART (Bidirectional and Auto-Regressive Transformers) family and is fine-tuned on the MultiNLI (Multi-Genre Natural Language Inference) dataset.
+In addition to standard API functionalities, the server-side implements advanced Natural Language Processing (NLP) capabilities using the BART-Large-MNLI model from Hugging Face. This model is part of the BART (Bidirectional and Auto-Regressive Transformers) family and is fine-tuned on the MultiNLI (Multi-Genre Natural Language Inference) dataset.
 
 #### **Model Used: Facebook/BART-Large-MNLI by Hugging Face**
 
