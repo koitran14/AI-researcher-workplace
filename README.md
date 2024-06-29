@@ -5,14 +5,14 @@ Welcome to the **AI Researcher Workplace** project! This platform is designed to
 ## 📜 Table of Contents
 1. [Overview](#overview)
 2. [Client Side](#client-side)
-   - [Technologies](#-technologies)
-   - [Getting Started](#-getting-started-client)
-3. [Server Side](#-server-side)
-   - [Technologies](#-technologies-server)
-   - [Advanced AI Capabilities](#-advanced-ai-capabilities)
-   - [Getting Started](#-getting-started-server)
-4. [License](#-license)
-5. [Acknowledgements](#-acknowledgements)
+   - [Technologies](#technologies)
+   - [Getting Started](#getting-started-client)
+3. [Server Side](#server-side)
+   - [Technologies](#technologies-server)
+   - [Advanced AI Capabilities](#advanced-ai-capabilities)
+   - [Getting Started](#getting-started-server)
+4. [License](#license)
+5. [Acknowledgements](#acknowledgements)
 
 ## 🌐✨ Overview ✨🌐
 
