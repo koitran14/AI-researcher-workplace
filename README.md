@@ -6,7 +6,7 @@ Welcome to the **AI Researcher Workplace** project! This platform is designed to
 1. [Overview](#overview)
 2. [Client Side](#client-side)
    - [Technologies](#technologies)
-   - [Getting Started](#getting-started-client)
+   - [Getting Started](#getting-started)
 3. [Server Side](#server-side)
    - [Technologies](#technologies-server)
    - [Advanced AI Capabilities](#advanced-ai-capabilities)
