@@ -8,11 +8,11 @@
 ![GitHub forks](https://img.shields.io/github/forks/koitran14/AI-researcher-workplace?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/koitran14/AI-researcher-workplace)
 
+Welcome to the **AI Researcher Workplace** project! This platform is designed to support researchers in the field of artificial intelligence (AI) by providing essential tools, resources, and collaboration features to streamline their research process.
+
 ![Project Banner](https://github.com/koitran14/WhiteBoard-Platform/blob/main/public/thumbnail.png?text=Algorithm+Visualizer)
 
 </div>
-
-Welcome to the **AI Researcher Workplace** project! This platform is designed to support researchers in the field of artificial intelligence (AI) by providing essential tools, resources, and collaboration features to streamline their research process.
 
 ## 📜 Table of Contents
 1. [Overview](#-overview-)
